@@ -1,0 +1,28 @@
+#ifndef POSITION_H
+#define POSITION_H
+
+/// Klasa do przechowywania pozycji.
+#include"Speed.h"
+
+class Position
+{
+	private:
+		double x;
+		double y;
+	public:
+		/// Metoda przesuwająca zwierzątko o dany wektor.
+		void Move(Speed &speed);
+		/// Przeładowanie operatora dodawania.
+		Position operator+(Speed &speed);
+		// Przeładowanie operatora =.
+		//Position operator=(Position &position);
+		/// Wyłuskanie pozycji.
+		Position GetPosition();
+		/// Ustawienie pozycji początkowej.
+		void SetPosition(double x, double y);
+		/// Metoda wyłuskująca współrzędną x.
+		double GetX();
+		/// Metoda wyłuskująca współrzędną y.
+		double GetY();
+};
+#endif

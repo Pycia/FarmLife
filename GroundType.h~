@@ -1,0 +1,22 @@
+#ifndef GroundType_H
+#define GroundType_H
+
+///Klasa do przechowywania informacji po jakim terenie może chodzić dane zwierzątko.
+
+class GroundType
+{
+	public:
+		bool M;		///Mud.
+		bool P;		///Pond.
+		bool G;		///Grass.
+		bool F;		///Fency.
+		GroundType();
+		/// Metoda ustawiająca typ powierzchni, po której może poruszać się dany zwierzak.
+		void SetGroundType(bool M1, bool P1, bool G1, bool F1);
+		/// Metoda wyłuskująca typ powierzchni, po której może chodzić dany zwierzak.
+		bool CanIgoTo(char type);
+		/// Metoda wyłuskująca typ powierzchni użyta dla board.
+		
+};
+
+#endif

@@ -1,0 +1,18 @@
+#ifndef OBJECT_H
+#define OBJECT_H
+
+#include"Position.h"
+
+/// Klasa reprezentująca obiekt na planszy.
+
+class Object
+{
+	protected:
+		//Image image;
+		Position position;
+	public:
+		//Metoda "rysująca" obiekt.
+		void Draw();
+};
+
+#endif

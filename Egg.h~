@@ -1,0 +1,12 @@
+#ifndef EGG_H
+#define EGG
+
+#include"Object.h"
+#include"Death.h"
+
+/// Klasa reprezentująca jajko ;-).
+
+class Egg:public Object, public Death
+{
+};
+#endif
